@@ -39,7 +39,7 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
-	  
+
 rule-providers:
   anti-AD:
     type: http
@@ -47,7 +47,7 @@ rule-providers:
     url: "https://anti-ad.net/clash.yaml"
     path: ./ruleset/anti-AD.yaml
     interval: 86400
-    
+
   reject:
     type: http
     behavior: domain
@@ -138,7 +138,7 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
     path: ./ruleset/lancidr.yaml
     interval: 86400
-    
+
 rules:
   - PROCESS-NAME,v2ray,DIRECT
   - PROCESS-NAME,xray,DIRECT
@@ -186,7 +186,7 @@ rules:
   - PROCESS-NAME,WebTorrent.exe,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
-  
+
   - RULE-SET,anti-AD,REJECT
   - RULE-SET,private,DIRECT
   - RULE-SET,reject,REJECT
