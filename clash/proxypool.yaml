@@ -1,4 +1,4 @@
-mixed-port: 7890
+mixed-port: 7891
 allow-lan: false
 mode: Rule
 log-level: info
@@ -14,8 +14,8 @@ dns:
 proxy-providers:
   all:
     type: http
-    url: #######
-    path: ########
+    url: "https://proxypoolss.tk/clash/proxies?type=vmess,trojan&c=TW,SG,KR,JP,US"
+    path: proxypoolss.tk/provider.yaml
     health-check:
       enable: true
       interval: 600
@@ -56,7 +56,7 @@ rule-providers:
     path: ./RuleSet/AntiAd.yaml
     url: https://raw.fastgit.org/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml
     interval: 86400
-    
+
 rules:
   - RULE-SET,AntiAd,REJECT
   - GEOIP,PRIVATE,DIRECT

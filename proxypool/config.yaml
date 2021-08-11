@@ -1,0 +1,16 @@
+# your domain
+domain: "gankang.tk"
+
+# database url
+database_url: ""
+
+# cloudflare api
+cf_email: "3198688004@qq.com"
+cf_key: "v1.0-e19f2392d7280f0b77078c73-ff97802c521c8dbdd56b9dbc67c054b39fc5eb7d571af822adff4180176fd26b0dc1d18857ca83b68c427166e276a9c186e44b3d3a0943581f2689150d24cda30a688127610edfc5"
+
+# source definition file
+source-files:
+  # use local file
+  - source.yaml
+  # use web file
+  # - https://example.com/source.yaml
