@@ -32,9 +32,9 @@ proxy-groups:
 proxy-providers:
   all:
     type: http
-    url: "https://freeu.xyz/clash/proxies"
+    url: "https://freeu.xyz/clash/proxies?c=HK,TW,KR,JP,US,SG"
     interval: 3600
-    path: ./provider.yaml
+    path: ./providers/freeu-provider.yaml
     health-check:
       enable: true
       interval: 600
